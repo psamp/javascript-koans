@@ -12,6 +12,9 @@ describe("About Applying What We Have Learnt", function() {
        { name: "Blue Moon", ingredients: ["blue cheese", "garlic", "walnuts"], containsNuts: true },
        { name: "Taste Of Athens", ingredients: ["spinach", "kalamata olives", "sesame seeds"], containsNuts: true }
     ];
+
+    console.log(products.ingredients);
+
   });
 
   /*********************************************************************************/
@@ -32,7 +35,7 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1);
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
@@ -40,6 +43,16 @@ describe("About Applying What We Have Learnt", function() {
       var productsICanEat = [];
 
       /* solve using filter() & all() / any() */
+
+    //   function filterMenu(p) {
+
+    //     if (products.containsNuts === false) {
+    //       return p.title;
+    //   }
+    // }
+
+    //   var menuIsFiltered = products.filter(filterMenu);
+
 
       expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
