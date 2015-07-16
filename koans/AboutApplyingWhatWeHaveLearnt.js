@@ -13,8 +13,6 @@ describe("About Applying What We Have Learnt", function() {
        { name: "Taste Of Athens", ingredients: ["spinach", "kalamata olives", "sesame seeds"], containsNuts: true }
     ];
 
-    console.log(products.ingredients);
-
   });
 
   /*********************************************************************************/
@@ -44,12 +42,7 @@ describe("About Applying What We Have Learnt", function() {
 
       /* solve using filter() & all() / any() */
 
-    //   function filterMenu(p) {
-
-    //     if (products.containsNuts === false) {
-    //       return p.title;
-    //   }
-    // }
+      _.filter
 
     //   var menuIsFiltered = products.filter(filterMenu);
 
