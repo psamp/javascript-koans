@@ -42,9 +42,10 @@ describe("About Applying What We Have Learnt", function() {
 
       /* solve using filter() & all() / any() */
 
-      _.filter
-
-    //   var menuIsFiltered = products.filter(filterMenu);
+      _.filter(products, function(food){
+      if(food.containsNuts === true){
+        console.log("title", food.name);
+      }});
 
 
       expect(productsICanEat.length).toBe(FILL_ME_IN);
@@ -61,7 +62,7 @@ describe("About Applying What We Have Learnt", function() {
       }
     }
 
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(233168);
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
